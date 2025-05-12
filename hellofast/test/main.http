@@ -11,9 +11,14 @@ Content-Type: application/json
 }
 
 ### PUT 示例
-PUT http://localhost:8000/items/
+PUT http://localhost:8000/items/123
 Content-Type: application/json
 
 {
-  "q": "hel"
+    "item": {
+        "name": "python",
+        "desc": "",
+        "price": 12.88,
+        "tax": 1.35
+    }
 }
