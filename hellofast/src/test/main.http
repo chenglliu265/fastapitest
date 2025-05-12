@@ -1,0 +1,19 @@
+
+### GET 示例
+GET http://localhost:8000/
+
+### POST 示例
+POST http://localhost:8000/items/
+Content-Type: application/json
+
+{
+  "q": "FastAPI 测试"
+}
+
+### PUT 示例
+PUT http://localhost:8000/items/
+Content-Type: application/json
+
+{
+  "q": "hel"
+}
