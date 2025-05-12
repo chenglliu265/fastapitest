@@ -1,2 +1,19 @@
+# Python 缓存
 __pycache__/
+**/__pycache__/
 *.py[cod]
+
+# 环境依赖
+venv/
+.env
+*.env
+
+# VS Code 设置（可选）
+.vscode/
+.idea/
+.target/
+
+
+# 本地数据
+*.db
+
