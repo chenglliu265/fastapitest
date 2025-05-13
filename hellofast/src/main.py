@@ -58,3 +58,17 @@ async def del_item(item_id: int):
     ]
     result = [item for item in result if item["item_id"] != item_id]
     return result
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+    tags: list[str] = []
+
+
+@app.put("/items/{item_id}")
+async def update_item(item_id: int, item: Item):
+    results = {"item_id": item_id, "item": item}
+    return results
