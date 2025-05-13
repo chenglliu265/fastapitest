@@ -11,6 +11,7 @@ Content-Type: application/json
 }
 
 ### PUT 示例
+
 PUT http://localhost:8000/items/123
 Content-Type: application/json
 
@@ -22,3 +23,9 @@ Content-Type: application/json
         "tax": 1.35
     }
 }
+
+###
+DELETE  http://localhost:8000/items/1
+Content-Type: application/json
+
+
